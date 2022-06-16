@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:pa_21/signin.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'main.dart';
 import 'package:get/get.dart';
@@ -130,7 +131,7 @@ class landing extends StatelessWidget {
                         height: 200,
                         child: ElevatedButton(
                           onPressed: () {
-                            Get.back();
+                            Get.to(() => signin());
                           },
                           child: const Icon(Icons.arrow_forward_ios,
                               color: Colors.black, size: 15),
